@@ -87,32 +87,3 @@ Moth* mutation(Moth* moth, std::random_device* generator)
     
     return moth;
 }
-
-// int main() {
-//     std::random_device generator;
-//     std::vector<Moth*> population = initialization(POPULATION, &generator);
-//     std::vector<Moth*> new_population;
-
-//     Moth* parent1;        
-//     Moth* parent2;
-//     for(int i{}; i < MAX_ITER; i++){
-//         for(auto it = population.begin(); it != population.end(); ++it) {
-            
-//             std::cout << (*it)->r << " " << (*it)->g << " " << (*it)->b << " - " << (*it)->get_fit() << std::endl;
-//             parent1 = selection(population, &generator);
-//             parent2 = selection(population, &generator);
-//             new_population.push_back(mutation(crossover(parent1, parent2, &generator), &generator));
-//         }
-
-//         for(auto it = population.begin(); it != population.end(); ++it) {
-//             delete *it;
-//         }
-
-//         population = new_population;
-//         new_population.clear();
-
-//         std::cout << std::endl;
-//     }
-
-//     return 0;
-// }
